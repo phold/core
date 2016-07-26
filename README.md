@@ -1,8 +1,8 @@
-# Phold - Core
+# Core
 
 The core is split in two projects: the site administration (starting/stopping the server, adding a new website to the proxy, etc) and the api that allows all of that happen from a client.
 
-## Phold workflow 
+# Phold workflow 
 
 Website Creation
 ================
@@ -36,7 +36,7 @@ The user can delete the website at any given point in time. We take the metadata
 Migrations
 ==========
 
-We will support migrations that Hugo toolings suport: Jekyll, WordPress, Blogger, etc.
+We will support migrations that the Hugo tools support: Jekyll, WordPress, Blogger, etc.
 
 Command Line
 ============
