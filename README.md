@@ -60,6 +60,14 @@ The free version will have a wide array of features, including:
 - Command line interface for superusers that don't want to host any content online.
   - With this, you can create a hugo project, compile it, and put it up via command line with a name. This will spin up a Docker container to host your website, but there will be no Hugo information for your website, only metadata regarding the machine and container PID. Updates don't exist here either: every time you publish a website, it will overwrite your previous one (tearing down the Docker container and putting it back up with the new website). Also, we are going to need an API key control for this to work. That way, we'll identify the user uploading websites (in case someone exploits a breach in our systems)
 
+Technical Details
+=================
+
+## Components
+
+- A component that is capable of breeding a new container out of a Dockerfile and into a ssh connection.
+- A web handler that is capable of receiving connections and matching them on dynamic subdomains (basically, just serve a file)
+- A web handler that is capable of creating hugo websites
 
 ## Notes
 
